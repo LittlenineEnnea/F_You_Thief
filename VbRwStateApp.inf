@@ -1,0 +1,33 @@
+## @file VbRwStateApp.inf
+#
+#  UEFI Application: calls QCOM_VERIFIEDBOOT_PROTOCOL.VBRwDeviceState
+#  with op=WRITE_CONFIG, 16-byte buffer (byte0=1, byte8=1).
+#
+#  Copyright (c) 2025. All rights reserved.
+#
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = gbl_efi
+  FILE_GUID                      = A1B2C3D4-E5F6-4789-ABCD-0123456789EF
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  VbRwStateApp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  QcomPkg/QcomPkg.dec
+  QcomSdkPkg/QcomSdkPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
+  BaseMemoryLib
+
+[Protocols]
+  gEfiQcomVerifiedBootProtocolGuid    ## CONSUMES
