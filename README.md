@@ -22,3 +22,13 @@ So we can overwrite the lock state storing in RPMB.
 Because the ABL it self reads/writes devinfo via a special function.
 
 Before milestone,we can call the function to overwrite the lock state.
+
+
+### WARNING
+This is just a POC
+
+Please be careful to use it.
+
+There are some tee issues.
+
+I will not be responsible for any corruption!
