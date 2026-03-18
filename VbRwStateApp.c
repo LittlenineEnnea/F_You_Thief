@@ -1,11 +1,9 @@
-/** @file VbRwStateApp.c
 
-  UEFI Application that calls QCOM_VERIFIEDBOOT_PROTOCOL.VBRwDeviceState
-  with op=WRITE_CONFIG (1), 16-byte buffer: byte0=1, byte8=1.
 
-  Copyright (c) 2025. All rights reserved.
+IDIOT FILE FOR WRITING TWO REGISTERS IN NO SENSE + LLM GENERATED + CANT BREAK ITSELF UNTIL CRASH
 
-**/
+
+
 
 #include <Uefi.h>
 #include <Library/UefiLib.h>
